@@ -51,7 +51,7 @@ void addStudent() {
 // View all students
 void viewStudents() {
     if (students.empty()) {
-        cout << "\n❗ No records found.\n";
+        cout << "\n  No records found.\n";
         return;
     }
     cout << "\n---- Student Records ----\n";
@@ -72,7 +72,7 @@ void searchStudent() {
             return;
         }
     }
-    cout << "❗ Student not found.\n";
+    cout << " Student not found.\n";
 }
 
 int main() {
@@ -90,7 +90,7 @@ int main() {
             case 2: viewStudents(); break;
             case 3: searchStudent(); break;
             case 4: cout << "Exiting...\n"; return 0;
-            default: cout << "❗ Invalid choice, try again!\n";
+            default: cout << " Invalid choice, try again!\n";
         }
     }
 }
